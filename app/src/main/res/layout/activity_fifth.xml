@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg">
+
+    <!-- Phần trên cùng hiển thị Xin chào và Thoát -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/greetingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xin chào, {user}"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thoát"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#FF0000"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <!-- Thẻ View giữa màn hình -->
+    <RelativeLayout
+        android:id="@+id/centerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_view"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/deviceInfoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="THÔNG TIN THIẾT BỊ"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/deviceNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên máy: {deviceName}"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/custom_green"
+            android:layout_below="@id/deviceInfoTitle"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/imeiTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android ID: {androidId}"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/custom_green"
+            android:layout_below="@id/deviceNameTextView"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/androidVersionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phiên bản Android: {androidVersion}"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/custom_green"
+            android:layout_below="@id/imeiTextView"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/startHackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="START HACK"
+            android:layout_below="@id/androidVersionTextView"
+            android:layout_marginTop="32dp"
+            android:padding="16dp"
+            android:background="@drawable/rounded_input_button"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#FF5500"
+            android:layout_centerHorizontal="true"/>
+
+        <!-- ProgressBar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/startHackButton"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:max="100"
+            android:progress="0"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+            android:progressDrawable="@drawable/progress_bar_red"/>
+
+    </RelativeLayout>
+
+    <!-- TextView Bản quyền ở dưới cùng màn hình -->
+    <TextView
+        android:id="@+id/textViewCopyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bản quyền thuộc © Kakalot5678"
+        android:textSize="14sp"
+        android:textColor="#80FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent" />
+
+</RelativeLayout>

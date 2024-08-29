@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg">
+
+    <!-- Thẻ View để tạo lớp phủ màu đen trong suốt -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_view"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"/>
+
+    <!-- FrameLayout chứa ScrollView và nội dung chính -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomLayout">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/contentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <!-- Bước 1 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BƯỚC 1 --------------------"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/custom_red"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hiện nay những trang có thể "
+                    android:textSize="16sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HACK 100%"
+                    android:textSize="16sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="#FF5500"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="chúng tôi sẽ hỗ trợ. Vì vậy đầu tiên bạn cần có một"
+                    android:textSize="16sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TÀI KHOẢN GAME\nTÀI KHOẢN NGÂN HÀNG"
+                    android:textSize="16sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:textColor="#FFBB86FC"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chú ý: tạo tài khoản có đuôi kkl8 hoặc cw8.\nVí dụ: kakalot + kkl8 = kakalotkkl8"
+                    android:textSize="16sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/custom_green"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="tạo tài khoản đúng như trên để TOOL scan và xác minh được"
+                    android:textSize="16sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Truy cập liên kết sau hiện tại đạt 100% HACK"
+                    android:textSize="16sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/LinkUrlButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="» LINK NÀY «"
+                    android:layout_marginTop="16dp"
+                    android:padding="16dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/rounded_background"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="#FF5500" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Để sử dụng được TOOL hãy nhớ Liên Kết Tài Khoản Ngân Hàng sau khi tạo tài khoản!"
+                    android:textSize="16sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@android:color/white" />
+
+                <!-- Bước 2 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BƯỚC 2 --------------------"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/custom_red"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sau khi tạo tài khoản xong quay lại TOOL để xác minh"
+                    android:textSize="16sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/custom_green" />
+
+                <!-- Input Username -->
+                <EditText
+                    android:id="@+id/usernameInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nhập Username"
+                    android:layout_marginTop="16dp"
+                    android:padding="12dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/edittext_background"
+                    android:textColor="@color/custom_red"/>
+
+                <!-- Button Xác Minh -->
+                <Button
+                    android:id="@+id/verifyButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Xác Minh Tài Khoản"
+                    android:layout_marginTop="16dp"
+                    android:padding="12dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/rounded_background"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="#FF5500" />
+
+                <!-- Button Liên Hệ Telegram -->
+                <Button
+                    android:id="@+id/contactTelegramButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Liên Hệ Telegram"
+                    android:layout_marginTop="8dp"
+                    android:padding="12dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/rounded_background"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="#007AFF" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+    <!-- Layout chứa nút Back và TextView bản quyền -->
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <!-- Button Back -->
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="« Back"
+            android:textSize="12sp"
+            android:textColor="#00F677"
+            android:background="@drawable/button_next_background"
+            android:padding="4dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- TextView Bản quyền -->
+        <TextView
+            android:id="@+id/textViewCopyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bản quyền thuộc © Kakalot5678"
+            android:textSize="14sp"
+            android:textColor="#80FFFFFF"
+            android:elevation="10dp"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

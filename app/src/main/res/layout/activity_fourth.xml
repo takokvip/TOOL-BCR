@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg">
+
+    <!-- Thẻ View giữ lại và làm nền cho phần giữa màn hình -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:background="@drawable/rounded_view"
+        android:layout_centerInParent="true"/>
+
+    <!-- Bọc các phần tử bên trong LinearLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textViewLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ĐĂNG NHẬP"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập vào hệ thống HACK"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/inputUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:padding="12dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="@color/custom_red"
+            android:textColorHint="@color/white"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/inputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:padding="12dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="@color/custom_red"
+            android:textColorHint="@color/white"
+            android:inputType="textPassword"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:padding="12dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#FF5500"
+            android:background="@drawable/rounded_background"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/buttonContactTelegram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Liên Hệ Telegram"
+            android:padding="12dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/rounded_background"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#007AFF"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/textViewNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chú ý: nếu không thể đăng nhập bằng tài khoản bạn vừa tạo liên hệ ngay đến Telegram"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <!-- TextView Bản quyền ở dưới cùng màn hình -->
+    <TextView
+        android:id="@+id/textViewCopyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bản quyền thuộc © Kakalot5678"
+        android:textSize="14sp"
+        android:textColor="#80FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:elevation="10dp"
+        android:background="@android:color/transparent" />
+
+</RelativeLayout>

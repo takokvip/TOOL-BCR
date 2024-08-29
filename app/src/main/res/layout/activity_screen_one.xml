@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/black">
+
+    <ProgressBar
+        android:id="@+id/progressBarCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        style="@android:style/Widget.Material.Light.ProgressBar.Large"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBarCircle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:max="100"
+        android:progress="0"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal" />
+
+    <TextView
+        android:id="@+id/progressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar"
+        android:layout_marginTop="69dp"
+        android:text="Đang kiểm tra... 0%"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/checkStatusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/progressBar"
+        android:layout_marginBottom="-68dp"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp" />
+</RelativeLayout>

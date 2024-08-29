@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg1">
+
+    <!-- View mờ nền đen -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_view"/>
+
+    <!-- Phần chính giữa màn hình -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/errorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LỖI - BƯỚC CUỐI!!!"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/custom_red"
+            android:layout_marginBottom="16dp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/descriptionTextView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tool chưa nhận diện được tài khoản của bạn vì vậy hãy hoàn tất bước cuối này để sử dụng Tool Hack mượt mà hơn! Để tránh việc sử dụng Tool bất hợp pháp, bẻ khóa tool của chúng tôi. Chúng tôi cần nhận diện đúng khách hàng sử dụng vậy hãy hoàn tất các bước này.!"
+            android:textSize="17sp"
+            android:textColor="@color/teal_200"
+            android:layout_marginBottom="24dp"
+            android:justificationMode="inter_word"/>
+
+        <TextView
+            android:id="@+id/descriptionTextView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bước 1: Điền Username tạo ở trang Game"
+            android:textSize="18sp"
+            android:textColor="@color/custom_red"
+            android:layout_marginBottom="24dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/descriptionTextView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bước 2: Chụp ảnh bill lên điểm upload phía dưới và bấm GỬI THÔNG TIN"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/custom_red"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/usernameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập User trang Game"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="@android:color/holo_red_light"
+            android:textColorHint="@color/white"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/uploadImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tải lên ảnh"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:width="150dp"
+            android:textColor="@color/white"
+            android:background="#368C00"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/selectedImageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhấp vào nút để tải ảnh lên"
+            android:textColor="@color/custom_green"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/sendInfoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GỬI THÔNG TIN"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#007AFF"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/contactTelegramButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Liên Hệ Telegram"
+            android:padding="12dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#FF0000"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewCopyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bản quyền thuộc © Kakalot5678"
+        android:textSize="14sp"
+        android:textColor="#80FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:elevation="10dp"
+        android:background="@android:color/transparent" />
+
+</RelativeLayout>
